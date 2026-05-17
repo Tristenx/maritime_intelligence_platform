@@ -1,0 +1,15 @@
+# Environment
+.env
+
+# Data
+data/
+*.csv
+*.csv.zst
+*.parquet
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
