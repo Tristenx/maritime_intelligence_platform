@@ -67,10 +67,3 @@ FOREIGN KEY (mmsi) REFERENCES vessels(mmsi);
 ALTER TABLE ais_positions
 ADD CONSTRAINT unique_mmsi_timestamp
 UNIQUE (mmsi, base_date_time);
-
-CREATE INDEX idx_ais_positions_mmsi_time
-ON ais_positions (mmsi, base_date_time);
-
-CREATE INDEX idx_ais_geom
-ON ais_positions
-USING GIST (geom);
