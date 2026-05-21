@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 source .env
 export PGPASSWORD=$DB_PASSWORD
 
