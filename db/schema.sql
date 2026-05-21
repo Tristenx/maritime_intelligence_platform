@@ -63,7 +63,3 @@ FOREIGN KEY (vessel_type_id) REFERENCES vessel_types(vessel_type_id);
 ALTER TABLE ais_positions
 ADD CONSTRAINT ais_positions_mmsi_foreign
 FOREIGN KEY (mmsi) REFERENCES vessels(mmsi);
-
-ALTER TABLE ais_positions
-ADD CONSTRAINT unique_mmsi_timestamp
-UNIQUE (mmsi, base_date_time);
